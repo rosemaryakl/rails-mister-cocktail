@@ -1,0 +1,12 @@
+<div class="container margin-top">
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+      <h1> Cocktail Name :</h1>
+
+      <%= simple_form_for @cocktail do |f| %>
+        <%= f.input :name %>
+        <%= f.button :submit, class: 'btn btn-primary btn-index' %>
+      <% end %>
+    </div>
+  </div>
+</div>

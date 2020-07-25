@@ -1,0 +1,28 @@
+// Graphical variables
+@import "config/fonts";
+@import "config/colors";
+@import "config/bootstrap_variables";
+
+// External libraries
+@import "bootstrap/scss/bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+// Your CSS partials
+@import "components/index";
+@import "pages/index";
+
+.signature{
+  font-family: Roboto;
+  font-size: 50px;
+  font-weight: 700;
+  color: $pink;
+}
+
+.margin-top{
+  margin-top: 20px;
+}
+
+a:hover{
+  text-decoration: none !important;
+}

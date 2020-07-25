@@ -1,0 +1,18 @@
+<%= link_to new_cocktail_path do %>
+  <div id="add_cocktail">
+    <button class="btn btn-flat btn-index">Create your <span class="favorite">favorite</span> cocktail</button>
+  </div>
+<% end %>
+
+
+<div class="container mt-3">
+  <div class="cards">
+    <% @cocktails.each do |cocktail| %>
+      <%= link_to cocktail_path(cocktail) do %>
+      <div class="card-category link" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= "https://unsplash.com/photos/Pz8dy5QD0Uk=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80" %>')">
+        <%= cocktail.name %>
+      </div>
+      <% end %>
+    <% end %>
+  </div>
+</div>
